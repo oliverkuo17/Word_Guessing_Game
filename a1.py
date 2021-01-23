@@ -1,12 +1,7 @@
 from a1_support import *
 
-# Fill these in with your details
-__author__ = "{{Yi-chi Kuo}} ({{45257908}})"
-__email__ = "yichi.kuo@uqconnect.edu.au"
-__date__ = "04092020"
+__author__ = "Oliver Kuo"
 
-
-# Write your code here (i.e. functions)
 def select_word_at_random(word_select):
     """
     Returns a string randomly selected from
@@ -187,8 +182,6 @@ def main():
             end_index = GUESS_INDEX_TUPLE[word_length - 6][guess_no - 1][1]
 
             # Display the matrix for user
-            # Information includes which part of the word is being guessed,
-            # word length, scores from prior guessing
             display_guess_matrix(guess_no, word_length, scores)
 
             # If the length of guess does not meet the expectation

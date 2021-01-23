@@ -1,13 +1,6 @@
-"""
-CSSE1001 Assignment 1 Support Code - You do not need to copy/paste this.
-All code is available via the line already supplied in a1.pt
-
-from a1_support import *
-
-"""
+"""Supporting code for the game"""
 
 import random
-
 
 GUESS_INDEX_TUPLE = (
     ((0, 1), (2, 4), (2, 4), (3, 5), (2, 5), (0, 5)),                         # word length 6
@@ -30,17 +23,17 @@ INPUT_ACTION = """
 Enter an input action. Choices are:
 s - start game
 h - get help on game rules
-q - quit game: 
+q - quit game:
 """
 
 HELP = """
-Game rules - You have to guess letters in place of the asterixis. 
-Each vowel guessed in the correct position gets 14 points. 
-Each consonant guessed in the correct position gets 12 points. 
-Each letter guessed correctly but in the wrong position gets 5 points. 
-If the true letters were "dog", say, and you guessed "hod", 
-you would score 14 points for guessing the vowel, "o", in the correct 
-position and 5 points for guessing "d" correctly, but in the 
+Game rules - You have to guess letters in place of the asterixis.
+Each vowel guessed in the correct position gets 14 points.
+Each consonant guessed in the correct position gets 12 points.
+Each letter guessed correctly but in the wrong position gets 5 points.
+If the true letters were "dog", say, and you guessed "hod",
+you would score 14 points for guessing the vowel, "o", in the correct
+position and 5 points for guessing "d" correctly, but in the
 incorrect position. Your score would therefore be 19 points.
 """
 
