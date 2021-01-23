@@ -35,15 +35,13 @@ def create_guess_line(guess_no, word_length):
     """
 
     # mark reprensents which part of the word is being guessed
-    # "-" means the letter is not being guessed
-    # "*" means the letter is being guessed
-    # Append the list in accordance with the word_length
+    # "-" : letter that is not being guessed
+    # "*" : letter that is being guessed
     mark = []
     mark += ["-"] * word_length
 
     # Get the range of the subword to be guessed
-    # from GUESS_INDEX_TUPLE depends on word_length and guess_no
-    # then replace "-" with "*" in mark list
+
     for idx in range(
         GUESS_INDEX_TUPLE[word_length - 6][guess_no - 1][0]-1,
         GUESS_INDEX_TUPLE[word_length - 6][guess_no - 1][1]
@@ -145,7 +143,6 @@ def main():
     """
     Handles top-level interaction with user.
     """
-    # Write the code for your main function here
     # Greeting and promt user to enter the action
     print(WELCOME)
     action = input(INPUT_ACTION)
@@ -181,7 +178,7 @@ def main():
             start_index = GUESS_INDEX_TUPLE[word_length - 6][guess_no - 1][0]
             end_index = GUESS_INDEX_TUPLE[word_length - 6][guess_no - 1][1]
 
-            # Display the matrix for user
+
             display_guess_matrix(guess_no, word_length, scores)
 
             # If the length of guess does not meet the expectation
@@ -205,7 +202,7 @@ def main():
             else:
                 print(f'Your guess was wrong. The correct word was "{word}"')
 
-    # End the game if "q" is entered
+    # End the game
     elif action == "q":
         return None
 
