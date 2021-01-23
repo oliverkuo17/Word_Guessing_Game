@@ -1,4 +1,4 @@
-from a1_support import *
+from word_guessing_support import *
 
 __author__ = "Oliver Kuo"
 
