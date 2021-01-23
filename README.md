@@ -2,7 +2,7 @@
 A Criss-Cross Multi-Step Word Guessing Game
 
 The goal of the game is for the player to guess that word through a series of guesses
-of subwords". The player will have a dierent number of guesses (with dierent subwords to guess; see
+of subwords". The player will have a different number of guesses (with different subwords to guess; see
 GUESS INDEX TUPLE)
 
 Input:
